@@ -1,12 +1,12 @@
-a=float(input("enter number"))
-b=float(input("enter number"))
-c=float(input("enter number"))
-if a > b and a > c:
-    temp=a
-elif b > c and b > a:
-    temp=b
-else :
-    temp=c
-    print("greater number is",temp)
-
-                
+L1=[2,1,"red"]
+L2=['apple','orange']
+L3=['php','perl','python']
+L1.remove('red')
+L3.append('c++')
+L4=L1+L2+L3
+print(L1)
+print(L4)
+for fruit in L2:
+    print(fruit)
+for proggraming in L3:
+    print(proggraming)
