@@ -1,10 +1,8 @@
-# Write a Python function that checks whether a passed string is palindrome or
-#not.
-def palindrome():
-    reverse = word[::-1]
-    if reverse==word:
-        print("palindrome")
+#Write a program to find the factorial of a number.
+def factorial(i):
+    if i==0:
+        return 1
     else:
-        print("not palindrome")
-word = str(input("Enter a word:"))
-palindrome()
+        return i*factorial(i-1)
+i = int(input("Enter a number: "))
+print(factorial(i))

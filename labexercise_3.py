@@ -1,17 +1,9 @@
-#Write a function called showNumbers that takes a parameter called limit. It
-#should print all the numbers between 0 and limit with a label to identify the even and
-#odd numbers. For example, if the limit is 3, it should print:
-# 0 EVEN
-# 1 ODD
-# 2 EVEN
-def show_numbers():
- for number in range(start, limit + 1):
-    if number % 2 ==0 :
-        print(number,"EVEN")
-    else:
-        print(number,"ODD")
-number = int(input("Enter the number:"))
-start = int(input("Enter the starting number:"))
-limit =  int(input("Enter a number:"))
-show_numbers()
-
+#Write a Python program to guess a number between 1 to 9.
+# Note : User is prompted to enter a guess. If the user guesses wrong then the
+#prompt appears again until the guess is correct, on successful guess, user will
+#get a "Well guessed!" message, and the program will exit.
+import random
+randomnum, guessednum = random.randint(1, 10), 0
+while randomnum != guessednum:
+    guessednum = int(input('Guess a number between 1 and 10 until you get it right : '))
+print('Well guessed!')

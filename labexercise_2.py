@@ -1,16 +1,9 @@
-#Write a function called fizz_buzz that takes a number.
-#If the number is divisible by 3, it should return “Fizz”.
-#If it is divisible by 5, it should return “Buzz”.
-#If it is divisible by both 3 and 5, it should return “FizzBuzz”.
-#Otherwise, it should return the same number.
-def fizz_buzz():
-    if number%3==0:
-        print("Fizz")
-    elif number%5==0:
-        print("Buzz")
-    elif number%3==0 or number%5==0:
-        print("FizzBuzz")
-    else:
-         print(number)
-number = int(input("Enter a number:"))
-fizz_buzz()
+#Write a Python program to convert temperatures to and from celsius,
+#fahrenheit.
+ #C = (5/9) * (F - 32)
+
+def temperature():
+    C = int((5 / 9) * (F - 32))
+    print("The weather is "+ " " + str(C) + " "+ "degree celsuis.")
+F = int(input("Enter the temperature in Fahrenheit : "))
+temperature()
