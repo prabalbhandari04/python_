@@ -1,4 +1,4 @@
-#Given an integer number, print its last digit.
-a = int(input("Enter a numer:"))
-b = a%10
-print("The last number is",b)
+# Write a Python program to reverse a string.
+word = input("Enter the word to be reversed:")
+reverse = word[::-1]
+print(reverse+ " " + "is the reversed word.")

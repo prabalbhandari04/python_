@@ -1,10 +1,16 @@
-#For given integer x, print ‘True’ if it is positive, print ‘False’ if it is negative and print ‘zero’
-#if it is 0.
-x= int(input("Enter the number:"))
-if x>0:
-    print("True")
-elif x<0:
-    print("False")
-else:
-    print("Zero")
+# Write a function called show_stars(rows). If rows is 5, it should print the
+#following:
+# *
+# **
+# ***
+# ****
+# *****
 
+rows = input("Enter number of rows :")
+rows = int (rows)
+
+for i in range (0, rows):
+    for j in range(0, i + 1):
+        print("*", end=' ')
+
+    print("\r")
